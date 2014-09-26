@@ -1,1 +1,12 @@
-<h1>Welcome to Indulge App</h1>
+<h1>Welcome to Indulge App -Love Local Food !</h1>
+
+<br>
+<% @places.each do	|place| %>
+<div>
+	<h1><%= place.name %></h1><br />
+	<i><%= place.address %></i><br />
+	<p><%= place.description %></p><br />
+</div>
+
+<hr />
+<% end %>
