@@ -1,5 +1,65 @@
 <h1>Welcome to Indulge App -Love Local Food !</h1>
 
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
+
+		<div class="item active">
+			<%= image_tag 'slider1.jpg', :class => 'img-responsive' %>
+			<div class="carousel-caption">
+				Super Nice place
+			</div>
+		</div>
+
+		<div class="item">
+			<%= image_tag 'slider2.jpg', :class => 'img-responsive' %>
+			<div class="carousel-caption">
+				Another super nice place 2
+			</div>
+		</div>
+
+		<div class="item">
+			<%= image_tag 'slider3.jpg', :class => 'img-responsive' %>
+			<div class="carousel-caption">
+				Another super nice place 3
+			</div>
+		</div>
+
+		<div class="item">
+			<%= image_tag 'slider4.jpg', :class => 'img-responsive' %>
+			<div class="carousel-caption">
+				Another super nice place 4
+			</div>
+		</div>
+
+		<div class="item">
+			<%= image_tag 'slider5.jpg', :class => 'img-responsive' %>
+			<div class="carousel-caption">
+				Another super nice place 5
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Controls -->
+	<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+
 
 
 <br>
@@ -33,14 +93,14 @@
 	</div>
 	<% end %>
 
-<!-- Display the latest pic added in thumbnail and link it to POST -->
+	<!-- Display the latest pic added in thumbnail and link it to POST -->
 	<% if place.photos.present? %>
 	<div>
 		<br>
 
-	<%= link_to 'Latest Photo for this place', place_path(place) %>
-	<%= link_to(image_tag(place.photos.last.picture, :class => "img-responsive img-thumb"), place_path(place)) %>
-	<!-- 	<%= image_tag(place.photos.last.picture, :class => "img-responsive img-thumb") %> -->
+		<%= link_to 'Latest Photo for this place', place_path(place) %>
+		<%= link_to(image_tag(place.photos.last.picture, :class => "img-responsive img-thumb"), place_path(place)) %>
+		<!-- 	<%= image_tag(place.photos.last.picture, :class => "img-responsive img-thumb") %> -->
 	</div>
 	<% end %>
 
