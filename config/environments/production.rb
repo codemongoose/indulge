@@ -1,5 +1,5 @@
 Indulge::Application.configure do
-  # config.action_mailer.default_url_options = { :host => 'indulge-app.herokuapp.com' }
+ config.action_mailer.default_url_options = { :host => 'indulge-app.herokuapp.com' }
  ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
     :port           => '587',
@@ -9,7 +9,6 @@ Indulge::Application.configure do
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
-
 
   # Settings specified here will take precedence over those in config/application.rb.
 
