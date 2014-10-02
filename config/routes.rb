@@ -9,8 +9,10 @@ Indulge::Application.routes.draw do
   resources :places do
     resources :comments, :only => :create
     resources :photos, :only => :create
-
   end
+
+    resources :users, :only => :show
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
