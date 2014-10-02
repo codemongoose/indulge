@@ -39,7 +39,8 @@ gem 'devise', '>= 3.2.4'
 gem 'geocoder'
 gem "figaro", ">= 1.0.0"
 gem 'will_paginate', '> 3.0'
-
+gem 'carrierwave'
+# gem 'rmagick', '2.13.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
