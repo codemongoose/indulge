@@ -40,6 +40,8 @@ gem 'geocoder'
 gem "figaro", ">= 1.0.0"
 gem 'will_paginate', '> 3.0'
 gem 'carrierwave'
+gem "fog", "~> 1.3.1"
+
 # gem 'rmagick', '2.13.2'
 
 # Use ActiveModel has_secure_password
